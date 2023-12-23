@@ -1,14 +1,10 @@
-This is a library for several Adafruit displays based on ST77* drivers.
+Modified to support that cute little "mini Smart Wifi Weather Clock". To purchase - search usual places: Ali, eBay, Amazon.
+It is ESP8266 + ST7789 based + 4MB flash, perfect for Arduinot project.
+It took me some time to figure out implementation specific pins. Unfortunately Adafruit examples do not work out of the box, in addition to pins, it need to use "SPI_MODE3".
+![mini Smart Wifi Weather Clock](https://github.com/LsrSal/Adafruit-ST7735-Library/blob/master/image.png?raw=true)
 
-  Works with the Adafruit 1.8" TFT Breakout w/SD card
-    ----> http://www.adafruit.com/products/358
-  The 1.8" TFT shield
-    ----> https://www.adafruit.com/product/802
-  The 1.44" TFT breakout
-    ----> https://www.adafruit.com/product/2088
-  as well as Adafruit raw 1.8" TFT display
-    ----> http://www.adafruit.com/products/618
- 
+This is a library for Adafruit displays based on ST77* drivers.
+
 Check out the links above for our tutorials and wiring diagrams.
 These displays use SPI to communicate, 4 or 5 pins are required to
 interface (RST is optional).
