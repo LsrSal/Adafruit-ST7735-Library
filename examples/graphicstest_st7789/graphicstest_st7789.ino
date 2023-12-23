@@ -18,7 +18,7 @@
 #include <SPI.h>
 
 
-  #define TFT_CS         -1
+  #define TFT_CS         -1  //device specific pins
   #define TFT_RST        2
   #define TFT_DC         0
 
@@ -29,13 +29,13 @@ float p = 3.1415926;
 
 void setup(void) {
 
-  pinMode(5, OUTPUT);
-  digitalWrite(5, LOW);
+  pinMode(5, OUTPUT);  //LCD backlight control. Chop ot for brightness control/
+  digitalWrite(5, LOW);  // it is inverted. LOW=ON.
   Serial.begin(115200);
   Serial.print(F("Hello! ST77xx TFT Test"));
 
-  tft.init(240, 240, SPI_MODE3);           // Init ST7789 240x240
-  tft.setRotation(2);
+  tft.init(240, 240, SPI_MODE3);           // Init ST7789 240x240, SPI Mode 3 is device specific.
+  tft.setRotation(2);   // and it is also rotated
 
 
   //tft.setSPISpeed(40000000);
