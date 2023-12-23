@@ -1,4 +1,4 @@
-##Modified to support that cute little "mini Smart Wifi Weather Clock". To purchase - search usual places: Ali, eBay, Amazon.
+## Modified to support that cute little "mini Smart Wifi Weather Clock". To purchase - search usual places: Ali, eBay, Amazon.
 It is ESP8266 + ST7789 based + 4MB flash, perfect for Arduinot project.
 It took me some time to figure out implementation specific pins. Unfortunately Adafruit examples do not work out of the box, in addition to pins, it need to use "SPI_MODE3".
 ![mini Smart Wifi Weather Clock](https://raw.githubusercontent.com/LsrSal/Adafruit-ST7735-Library/master/image.png)
